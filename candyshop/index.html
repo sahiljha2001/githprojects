@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANDY SHOP</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <div class="container">
+     <div class="header">
+     <h1>candyshop</h1>
+     </div>
+    
+  
+ <div>
+  <form class="candy-form" >
+    <label for="candy" class="label-candy">Candy</label>
+    <input type="text" id="candy" class="candy-input" placeholder="name of candy">
+    <label for="Description" class="label-description">Description</label>
+    <input type="text" id="Description" class="candy-description" placeholder="type of candy">
+    <label for="price" class="label-price">Price</label>
+    <input type="number" id="price" class="candy-price" placeholder=" price ">
+    <label for="Quantity" class="label-quantity">Quantity</label>
+    <input type="number" id="Quantity" class="candy-quantity" placeholder="quantity ">
+   <input type="submit" class="butn" value="Add Item o"
+onclick="addcandies(event)"   >
+
+  </form>
+  
+  </div>
+  
+  <div class="candy-information">
+    <ul class="choco-status">
+        <li>candyname</li>
+        <li> candytype</li>
+        <li>price</li>
+        <li>quantity</li>
+        <input type="submit" class="cndy-numbers" id="buy1" value="Buy1"  onclick="updatequantity(event)">
+        <input type="submit" class="cndy-numbers" id="buy2" value="Buy2">
+        <input type="submit" class="cndy-numbers" id="buy3"  value="Buy3">
+    </ul>
+<ul id="items"></ul>
+  </div>
+
+  
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
